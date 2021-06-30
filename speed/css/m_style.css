@@ -1,0 +1,369 @@
+
+
+* {margin:0; padding:0; outline: none; font-family:"Nanum Gothic", sans-serif; }
+em {font-style: normal}
+a {text-decoration: none}
+ul, li, ol {list-style:none;}
+button {background:none; border:0; vertical-align: middle; cursor: pointer; line-height: 1em;}
+img {vertical-align: middle}
+body {font-size:18px; background: #000;}
+body, html {height:100%; font-size:12px; line-height: 1em;}
+
+::-webkit-scrollbar {width: 8px; height: 8px;}
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: none;}
+::-webkit-scrollbar-track {-webkit-border-radius: 10px; border-radius:10px; background:#333;  }
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background:#767676; border-radius: 10px;}
+
+
+
+.main {margin:0 auto; background:#000;}
+.header {position: relative; height:50px; background:#3c3c3c; overflow:hidden; text-align: right}
+.header h1 {position: absolute; left:10px; top:0; bottom:0;  color:#f3e5b1; font-size:1em;}
+.header h1 img {height:100%; vertical-align: middle; margin-right:-10px;}
+.header h1 span {color:#fff;}
+.header select {vertical-align: middle; height:30px;}
+.header img {height:50px}
+.header .top_links {display: none; position: absolute; right:0; top:0; left:0; bottom:0; color:#d2d2d2; white-space: nowrap; text-align: right; background:#3c3c3c; }
+.header .top_links.active {display: block}
+.header .top_links button {width:50px; height:50px; color:#d2d2d2; white-space: nowrap; vertical-align: middle; background-repeat: no-repeat; background-position: center 0; background-size:auto 100%; font-size:0; line-height: 0; text-indent: -999px;}
+.header .top_links span {display: inline-block; vertical-align: middle}
+.header .top_links .t_close {position: absolute; left:0; top:0;}
+.header .t1 {background-image:url('/m_images/main/ico_top1.png')}
+.header .t2 {background-image:url('/m_images/main/ico_top2.png')}
+.header .t3 {background-image:url('/m_images/main/ico_top3.png')}
+.header .t4 {background-image:url('/m_images/main/ico_top4.png')}
+.header .top_links button:hover {color:#f59d39}
+.header .t1:hover {background-image:url('/m_images/main/ico_top1_on.png')}
+.header .t2:hover {background-image:url('/m_images/main/ico_top2_on.png')}
+.header .t3:hover {background-image:url('/m_images/main/ico_top3_on.png')}
+.header .t4:hover {background-image:url('/m_images/main/ico_top4_on.png')}
+
+@media screen  and (orientation: landscape) {
+    .header .t_menu {display: none;}
+    .header .top_links {display: inline-block; height:50px; padding-left:10px; position: static; left:auto; right:auto; width:auto}
+    .header .top_links .t_close {display: none}
+    .header .top_links.active {display: inline-block}
+}
+
+.content {}
+.notice {position: relative; margin:1% 0 0; height: 25px; width:100%; overflow: hidden; white-space: nowrap;}
+.notice div {display: block;  width: 200%; height: 30px; position: absolute; overflow: hidden; animation: marquee 20s linear infinite;}
+.notice a {color:#fff;  white-space: nowrap; margin-left:10px;}
+
+.gameContainer {}
+.movieBox {width:100%; margin-bottom:10px; border:1px solid #c31e2c; box-sizing: border-box}
+
+.gameContainer {position: fixed; left:0; right:0; bottom:0; background:#111; }
+.gameContainer.active .collapsible button span {background-image:url(/m_images/main/bg_betting2.png);}
+.gameContainer.active .stateBox {display: block}
+.gameContainer .collapsible {position: absolute; left:0; right:0; top:-40px; height:40px; background:url(/m_images/main/bg_betting.png) repeat-x 0 0; background-size:auto 40px; text-align: center}
+.gameContainer .collapsible button {position: relative; width:225px; height:40px;}
+.gameContainer .collapsible button img {display: block; height:100%;}
+.gameContainer .collapsible button span {position: absolute; left:160px; top:0; display: block; width:12px; height:40px; background: url(/m_images/main/bg_betting1.png) no-repeat 0 0; background-size: auto 40px;}
+.gameContainer .stateBox {display: none; width:95%; margin:20px auto;}
+.stateBox .item2 {width:100%; margin-bottom:10px; border:1px solid #494949; border-left:0; overflow:hidden; box-sizing: border-box}
+.stateBox .item2 li {position: relative; float:left; min-width:30%; height:50%; color:#fff; padding:10px 5px 10px 0; box-sizing: border-box; overflow:hidden; border-left:1px solid #494949;  line-height:1em;}
+.stateBox .item2 li strong {display: inline-block; width:70px; margin-right:3px;text-align: center; color:#f3e5b1;}
+.stateBox .item2 li strong::after {content:""; border-right:1px solid #494949; position: absolute; left:70px; top:0; bottom:0}
+.stateBox .item2 li:last-child {clear:both; width:100%; border-top:1px solid #494949; }
+
+.stateBox .item3 {width:100%; height:120px; margin-bottom:10px; border:1px solid #007103; overflow:hidden; box-sizing: border-box; border-radius: 0 0 20px 20px; overflow:hidden;}
+.stateBox .item3 li {float:left; color:#fff; height:50%; text-align: center; box-sizing: border-box; background: #0c3f31;}
+.stateBox .item3 li div {display: table; width:100%; height:100%;}
+.stateBox .item3 li div span {display: table-cell; vertical-align: middle}
+.stateBox .item3 li:hover, .stateBox .item3 li.on {background:#082920;}
+.stateBox .item3 .l1 {width:33.3%;}
+.stateBox .item3 .l2 {width:33.4%; border-left:1px solid #007103; border-right:1px solid #007103;}
+.stateBox .item3 .l3 {width:33.3%;}
+.stateBox .item3 .l4 {width:50%; border-top:1px solid #007103; }
+.stateBox .item3 .l5 {width:50%; border-left:1px solid #007103; border-top:1px solid #007103; }
+
+.stateBox .item4 {margin-bottom:10px; overflow: hidden; text-align: center}
+.stateBox .item4 span {; text-align:center; display:none; font-size:10px; width: 0; height: 0; margin:0 auto; border-right: 5px solid transparent; border-left: 5px solid transparent; border-top: 5px solid darkorange;}
+.stateBox .item4 .i_coin {display: inline-block; width:11%; max-width:35px; text-align: center; color:#fff; font-size:0.8em;}
+.stateBox .item4 .i_coin img {display: block; width:70%; margin:10px auto 0;}
+.stateBox .item4 .i_coin:hover img {margin-top:0;}
+.stateBox .item4 .i_coin:hover span {display: block}
+.stateBox .item4 .c1 span {border-top: 5px solid #b9b9b9;}
+.stateBox .item4 .c2 span {border-top: 5px solid #e6830f;}
+.stateBox .item4 .c3 span {border-top: 5px solid #db4118;}
+.stateBox .item4 .c4 span {border-top: 5px solid #5eb427;}
+.stateBox .item4 .c5 span {border-top: 5px solid #329a8d;}
+.stateBox .item4 .c6 span {border-top: 5px solid #334a9d;}
+.stateBox .item4 .c7 span {border-top: 5px solid #a42d8a;}
+.stateBox .item4 .c8 span {border-top: 5px solid #ce1d25;}
+
+.stateBox .itemBtn {width:90%; margin:0 auto; height:35px;}
+.stateBox .itemBtn button {display:block; float:left; height:100%; background:red; width:23.8%; margin-right:1%; border-radius: 2px; color:#fff;}
+.stateBox .itemBtn .b1:hover {background: linear-gradient(#555555, #888888); }
+.stateBox .itemBtn .b1 {background: linear-gradient(#888888, #555555);  border:1px solid #878787; }
+.stateBox .itemBtn .b2:hover {background: linear-gradient(#264e7e, #3667a9);}
+.stateBox .itemBtn .b2 {background: linear-gradient(#3667a9, #264e7e); border:1px solid #467ec1; }
+.stateBox .itemBtn .b3:hover {background: linear-gradient(#9b0f1a, #cd1823); }
+.stateBox .itemBtn .b3 {float:right; width:50.4%; margin-right:0; background: linear-gradient(#cd1823, #9b0f1a); border:1px solid #e72737; }
+
+@media screen  and (orientation: landscape) {
+    .gameContainer  {height:auto;}
+    .gameContainer .stateBox {position: relative; width:90%; padding-right:30%;  overflow: hidden; box-sizing: border-box}
+    .gameContainer .stateBox .item3 {height:100px; margin-bottom:0}
+    .gameContainer .stateBox .item4 {height:auto;}
+    .gameContainer .stateBox .item4 .i_coin {width:20%;}
+    .gameContainer .stateBox .item4 {position: absolute; right:0; top:0; width:30%}
+    .gameContainer .stateBox .itemBtn {position: absolute; right:0; bottom:0; width:30%; height:auto;}
+    .gameContainer .stateBox .itemBtn button {float:left; width:48%; margin:0; height:30px;}
+    .gameContainer .stateBox .itemBtn .b1 {margin-right:4%;}
+    .gameContainer .stateBox .itemBtn .b3 {clear:both; width:100%; margin-top:5px;}
+}
+
+
+img.blank {display: block; width:100%;}
+
+.panContainer {position: relative; padding:25px 0; margin-bottom:60px; color:#fff; background:#fff; }
+.panContainer .item_left {position: absolute; left:0; top:0; right:0; width:100%; height:25px; background:#b8b8b8;}
+.panContainer .item_left ul {float:left;}
+.panContainer .item_left ul li {float:left; margin-left:10px; padding-top:4px; overflow: hidden}
+.panContainer .item_left ul li div {width:10px; height:17px; margin:0 auto;}
+.panContainer .item_left ul li img {height:18px;}
+.panContainer .item_right {position: absolute; left:0; bottom:0; right:0; width:100%; height:25px; background: #e4e4e4;}
+.panContainer .item_right ul {width:100%; text-align: center}
+.panContainer .item_right li {display:inline-block; margin:0 10px; color:#000; line-height:25px;}
+.panContainer .item_right li img {width:17px;}
+.panContainer .item_center {height:170px;  background:#e4e4e4; overflow: hidden}
+.panContainer .item_center .itemBox1 {width:100%; height:60px; overflow: hidden; margin-top:-1px; border-bottom:2px solid #e4e4e4}
+.panContainer .item_center .itemBox2 {float:left; width:40%; height:108px; overflow: hidden; box-sizing: border-box; border-right:3px solid #e4e4e4}
+.panContainer .item_center .itemBox3 {float:right; width:60%; height:36px; overflow: hidden;}
+.panContainer .item_center .itemBox4 {float:right; width:60%; height:36px; overflow: hidden;}
+.panContainer .item_center .itemBox5 {float:right; width:60%; height:36px; overflow: hidden;}
+.panContainer .itemBox{
+    position: relative; display: -webkit-box; display: -ms-flexbox; display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap;
+    -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-line-pack:start; align-content:flex-start;
+    background:#fff;
+}
+.panContainer .itemBox .item{-webkit-box-sizing:border-box;  box-sizing:border-box; position: relative;}
+.panContainer .itemBox .item:after{content:''; height: 0; padding-bottom: 100%; display: block;}
+.panContainer .itemBox .item .in {position: absolute; top: 0;bottom: 0;left: 0;right: 0; margin: 0 0 -1px -1px; border:1px solid #e4e4e4;}
+.panContainer .itemBox .item .in div {width:100%; height:100%; background-repeat: no-repeat !important;}
+
+.panContainer .item_center .itemBox1 .item{width:10px;}
+.panContainer .item_center .itemBox2 .item{width:18px;}
+.panContainer .item_center .itemBox3 .item{width:6px}
+.panContainer .item_center .itemBox4 .item{width:6px}
+.panContainer .item_center .itemBox5 .item{width:6px}
+
+.panContainer .item_result.active {display: block}
+.panContainer .item_result {display: none; position: fixed; left:0; top:0; bottom:0; right:0; z-index:100; background:rgba(0,0,0,0.8)}
+.panContainer .item_result .item {position: relative; width:96%; height:200px; margin:50% auto;  overflow: hidden}
+.panContainer .item_result .r_card {position: relative; float:left; width:120px; padding-bottom:70px; text-align: center}
+.panContainer .item_result .r_card img {width:50px;}
+.panContainer .item_result .card1 img:first-child {position: absolute; right:30%; bottom:0; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);}
+.panContainer .item_result .card2 {float:right;}
+.panContainer .item_result .card2 img:last-child {position: absolute; left:30%; bottom:0; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);}
+.panContainer .item_result .r_score {float:left; width:140px; height:25px; margin-bottom:10px; font-size:12px; background:url(/m_images/main/r_1.png) no-repeat right 0; background-size:contain; text-align: right}
+.panContainer .item_result .r_score2 {float:right ; background:url(/m_images/main/r_2.png) no-repeat 0 0; background-size:contain; text-align: left}
+.panContainer .item_result .r_score span {display: inline-block; width:20px; text-align: center; line-height:20px;  letter-spacing: -1px; font-family: Arial, sans-serif;}
+.panContainer .item_result .r_img {position:absolute; left:30%; right:30%; top:0; bottom:0; background-size:contain; z-index:1; background-repeat: no-repeat; background-position: center center}
+.panContainer .item_result .r_baker {background-image: url(/m_images/main/r_banker.png)}
+.panContainer .item_result .r_tie {background-image: url(/m_images/main/r_tie.png)}
+.panContainer .item_result .r_player {background-image: url(/m_images/main/r_player.png)}
+
+
+
+@media screen  and (orientation: landscape) {
+    .panContainer .item_result .item {position: relative; top:50%; max-width:600px; height:290px; margin:-140px auto 0;  }
+    .panContainer .item_result .r_score {width:240px; height:40px; margin-bottom:20px; font-size:20px;}
+    .panContainer .item_result .r_score span {width:37px; line-height:35px;}
+    .panContainer .item_result .r_card {width:210px; padding-bottom:110px;}
+    .panContainer .item_result .r_card img {width:80px; margin:0 5px;}
+}
+
+
+.tableList {padding:20px 0; font-size:1.2em; }
+.tableList .icon_exclusive{position: absolute; right:0; top:0; width:12%;}
+.tableList .tableItem {position: relative; width:94%; margin:0 auto 20px; border-bottom:1px solid #3a3a3a;}
+.tableList .table_title {width:100%; background:#3a3a3a; color:#929292; overflow: hidden;}
+.tableList .table_title div {float:right; padding:10px 2% 15px; }
+.tableList .table_title div:first-child {float:left;}
+.tableList .table_title span {color:#fff;}
+.tableList .table_score {position: relative; background:#111111; color:#fff; padding:10px 2% 15px; }
+.tableList .table_score span {margin-left:3%;}
+.tableList .table_score .s1 {color:#ff4343; margin-left:0;}
+.tableList .table_score .s2 {color:#3a76cc;}
+.tableList .table_score .s3 {color:#6ec344;}
+.tableList .table_score button {position: absolute; right:0; top:2px; bottom:2px; background: #be1c2c; color:#fff; width:20%; font-size:1em;}
+
+.tableList .panContainer {padding:0; margin:0;}
+.tableList .panContainer .item_center {left:0; right:0;}
+
+.tableList .tableItem.active .table_info {display: block}
+.tableList .table_info {display: none; position: absolute; left:0; right:0; top:0; bottom:0; background:#000;}
+.tableList .table_info ul {width:100%; overflow: hidden}
+.tableList .table_info li {float:left; width:50%; padding:3% 0 0; text-indent: 1%; font-size:11px;}
+.tableList .table_info span {display: inline-block; width:45%;}
+.tableList .table_info em {color:#fef0b7;}
+
+
+@media screen  and (orientation: landscape) {
+    .tableList .tableItem {float:left; width:47%; margin:0 1.5% 20px;}
+
+}
+
+
+.loginContainer {width:100%; height:100%; background:url(/images/bg_login.jpg) no-repeat center 0; background-size:150% auto}
+.loginContainer .login {position: relative; width:100%; height:100%; margin:0 auto; text-align: center; background:#262625 url(/m_images/login1.png?t=5) no-repeat center 0; background-size:90% auto;}
+.loginContainer .loginBox {position: absolute; left:10%; top:90px; bottom:0; width:80%; margin:0 auto 0; background:#262625; }
+
+.loginContainer .loginBox .item {width:100%; margin:0 auto; padding:0 10%; background: #000; border:2px solid #9e2828; color:#fff; box-sizing: border-box}
+.loginContainer .loginBox ul {padding:10px 0;}
+.loginContainer .loginBox li {position: relative; text-align: left; padding:0 0 0 30%; margin-top:5px; font-size:1.1em; }
+.loginContainer .loginBox li strong {position:absolute; left:0; top:8px; bottom:0; display: inline-block; width:30%; font-weight:normal; vertical-align: middle}
+.loginContainer .loginBox li em {position: absolute; right:0; bottom:8px; font-weight: bold}
+.loginContainer .loginBox li input {width:100%; background:none; padding:2px; font-size:1.1em; border:none; border-bottom:1px solid #666666; vertical-align: middle; color:#f3e5b1; box-sizing: border-box}
+.loginContainer .loginBox li button {position: relative; width:100%; padding:8px; border:1px solid #666666; color:#fff; line-height:1em; font-size:1.1em;  text-align: left; box-sizing: border-box; background:#0a0a0a;}
+.loginContainer .loginBox li button img {height:10px; }
+.loginContainer .loginBox li button span {position: absolute; right:10px; top:50%; text-align:center; font-size:10px; width: 0; height: 0; margin:-1px auto 0; border-right: 5px solid transparent; border-left: 5px solid transparent; border-top: 5px solid #fff; z-index:1;}
+.loginContainer .loginBox li button::after {content:" " ; position: absolute; right:0; top:0; bottom:0; width:30px; background:#666}
+.loginContainer .loginBox li div.select {display: none; position: absolute; left:30%; right:0; margin-top:-1px; z-index:2; background:#0a0a0a; border:1px solid #666; box-sizing: border-box; border-top:0;}
+.loginContainer .loginBox li div.select img {height:10px;}
+.loginContainer .loginBox li div.select div {padding:8px;  border-top:1px solid #666}
+.loginContainer .loginBox li div.select div:hover {background:#000;}
+.loginContainer .loginBox li div.select.active {display: block}
+.loginContainer .loginBox .i_btn {padding:10px 0 15px;}
+.loginContainer .loginBox .i_btn button {display: inline-block; width:55%; height:25px; color:#fff; font-size:14px; line-height:22px; background:#9e2828;}
+.loginContainer .loginBox .i_btn button:first-child {width:35%; margin-right:5%; background:#2e5c90}
+.loginContainer .agree {display: block; position: absolute; left:0; right:0; top:0; bottom:0; background: #262625; z-index:10; color:#e67316; font-size:1.1em; font-weight: bold}
+.loginContainer .agree h1 {padding:20px; }
+.loginContainer .agree h1 img {width:70px;}
+.loginContainer .agree .i_list {width:80%; height:50%; padding:0 2%; margin:2% auto; overflow:hidden; overflow-y:auto; color:#fff; box-sizing: border-box; font-weight: normal; line-height:1.5em;}
+.loginContainer .agree .i_btn {}
+.loginContainer .agree .i_btn button {height:30px; color:#fff; width:100px; background: #e67316;}
+.loginContainer .agree .i_btn button:first-child {background:#767676; margin-right:10px;}
+
+
+
+@media screen  and (orientation: landscape) {
+    .loginContainer {background-size:contain}
+    .loginContainer .login { width:400px;}
+    .loginContainer .loginBox {top:120px}
+}
+
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+
+
+.popup {display: none; position: fixed; left:0; right:0; top:50px; bottom:0; background:rgba(0,0,0,1); z-index:9999; overflow-x:auto; box-sizing: border-box;  border:1px solid #e67316;}
+.popup .pop_cont {padding:2% 3%; max-width:600px; margin:0 auto; color:#fff; box-sizing: border-box; }
+.popup .pop_cont h3 {margin-bottom:4%; color:#e67316; font-size:1.3em; line-height:1.5em;vertical-align: top}
+.popup .pop_cont h4 {margin-bottom:2%; }
+.popup .pop_cont .p_close {position: absolute; right:0; top:0; max-width:50px; width:10%;}
+.popup .pop_cont .p_close img {width:100%;}
+.popup table.p_table {width:100%; margin-bottom:5%; border-collapse: collapse}
+.popup .pop_cont table.p_table:last-child {margin-bottom:0;}
+.popup table.p_table td,
+.popup table.p_table th {padding:5px; border:1px solid #525252; font-weight: normal; font-size:0.9em;  background: #2d2d2d;}
+.popup table.p_table thead th {background: #5e5e5e; color:#fff; border-color:#525252;}
+.popup table.p_table div {position: relative; text-align: right; padding-left:10px;}
+.popup .i_down::after {position: absolute; left:3px; top:50%; margin-top:-2px; content:""; font-size:10px; width: 0; height: 0; border-right: 5px solid transparent; border-left: 5px solid transparent; border-top: 5px solid #6593d6;}
+.popup .i_up::after {position: absolute; left:3px; top:50%; margin-top:-2px;content:""; font-size:10px; width: 0; height: 0; border-right: 5px solid transparent; border-left: 5px solid transparent; border-bottom: 5px solid #ff4b4b;}
+.popup .i_win {color:#ff4b4b;}
+.popup .i_lose {color:#6593d6}
+.popup .item_scroll {max-height:300px; overflow:auto;}
+.popup .item_scroll table {min-width:450px;}
+.popup .search {position: relative; padding:5px 100px 0 5px; margin-bottom:20px; background:#2d2d2d; border:1px solid #525252;}
+.popup .search strong {display: inline-block; width:60px;}
+.popup .search button {position: absolute; right:5px; top:5px; bottom:5px; padding:0 20px;   border:1px solid #878787; color:#fff; vertical-align: middle; background: linear-gradient(#777, #555555);  border-radius: 2px;}
+.popup .search .i-cal { width:90px; height:25px; padding:0; text-indent: 5px; margin:0 10px 5px 3px; vertical-align: middle}
+.popup.active {display: block}
+
+
+
+
+@media screen  and (orientation: landscape) {
+    .popup .item_scroll {max-height:160px; overflow:auto;}
+}
+
+
+/*-------- Game Result Icon -----------*/
+/*[1] ��Ŀ*/
+.gr_1 {background:url(/m_images/v_1.png) center center no-repeat;background-size:contain}
+.gr_2 {background:url(/m_images/v_3.png) center center no-repeat;background-size:contain}
+.gr_3 {background:url(/m_images/v_2.png) center center no-repeat;background-size:contain}
+.gr_4 {background:url(/m_images/v_4.png) center center no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.gr_5 {background:url(/m_images/v_5.png) center center no-repeat;background-size:contain}
+.gr_6 {background:url(/m_images/v_7.png) center center no-repeat;background-size:contain}
+.gr_7 {background:url(/m_images/v_6.png) center center no-repeat;background-size:contain}
+.gr_8 {background:url(/m_images/v_8.png) center center no-repeat;background-size:contain}
+
+/*[3] �÷��̾�*/
+.gr_9 {background:url(/m_images/v_9.png) center center no-repeat;background-size:contain}
+.gr_10 {background:url(/m_images/v_11.png) center center no-repeat;background-size:contain}
+.gr_11 {background:url(/m_images/v_10.png) center center no-repeat;background-size:contain}
+.gr_12 {background:url(/m_images/v_12.png) center center no-repeat;background-size:contain}
+/*-------- Game Result Icon -----------*/
+
+/*-------- Game Line Result Icon -----------*/
+
+/*[1] ��Ŀ*/
+.glr_1 {background:url(/m_images/sv_1.png) center center no-repeat;background-size:contain}
+.glr_2 {background:url(/m_images/sv_3.png) center center no-repeat;background-size:contain}
+.glr_3 {background:url(/m_images/sv_2.png) center center no-repeat;background-size:contain}
+.glr_4 {background:url(/m_images/sv_4.png) center center no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.glr_5 {background:url(/m_images/sv_5.png) center center no-repeat;background-size:contain}
+.glr_6 {background:url(/m_images/sv_7.png) center center no-repeat;background-size:contain}
+.glr_7 {background:url(/m_images/sv_6.png) center center no-repeat;background-size:contain}
+.glr_8 {background:url(/m_images/sv_8.png) center center no-repeat;background-size:contain}
+
+/*[1] ��Ŀ*/
+.glr_1_1 {background:url(/m_images/sv_1.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+.glr_2_1 {background:url(/m_images/sv_3.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+.glr_3_1 {background:url(/m_images/sv_2.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+.glr_4_1 {background:url(/m_images/sv_4.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.glr_5_1 {background:url(/m_images/sv_5.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+.glr_6_1 {background:url(/m_images/sv_7.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+.glr_7_1 {background:url(/m_images/sv_6.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+.glr_8_1 {background:url(/m_images/sv_8.png) , url(/m_images/ttt.png) center center no-repeat;background-size:contain}
+
+/*-------- Game Line Result Icon -----------*/
+
+/*-------- China Point Icon -----------*/
+/*[1] �߱���1 ( 1 : ȫ / 2 : û) */
+.c1_1 {background:url(/m_images/c1_1.png) center center no-repeat;background-size:contain}
+.c1_2 {background:url(/m_images/c1_2.png) center center no-repeat;background-size:contain}
+
+/*[2] �߱���2 ( 1 : ȫ / 2 : û) */
+.c2_1 {background:url(/m_images/c2_1.png) center center no-repeat;background-size:contain}
+.c2_2 {background:url(/m_images/c2_2.png) center center no-repeat;background-size:contain}
+
+/*[3] �߱���2 ( 1 : ȫ / 2 : û) */
+.c3_1 {background:url(/m_images/c3_1.png) center center no-repeat;background-size:contain}
+.c3_2 {background:url(/m_images/c3_2.png) center center no-repeat;background-size:contain}
+
+/* ====================��ȣ���============ */
+/*[1] �߱���1 ( 1 : ȫ / 2 : û) */
+.r_c1_1 {background:url(/m_images/c1_1.png) center center no-repeat; background-size:contain}
+.r_c1_2 {background:url(/m_images/c1_2.png) center center no-repeat;background-size:contain}
+
+/*[2] �߱���2 ( 1 : ȫ / 2 : û) */
+.r_c2_1 {background:url(/m_images/c2_1.png) center center no-repeat;background-size:contain}
+.r_c2_2 {background:url(/m_images/c2_2.png) center center no-repeat;background-size:contain}
+
+/*[3] �߱���2 ( 1 : ȫ / 2 : û) */
+.r_c3_1 {background:url(/m_images/c3_1.png) center center no-repeat;background-size:contain}
+.r_c3_2 {background:url(/m_images/c3_2.png) center center no-repeat;background-size:contain}
+
+/*-------- China Point Icon -----------*/
+
+.game_status {position:absolute;z-index:999;width:120px;padding:10px 0 10px 0;border:2px solid #fff;background-color:#000;opacity:0.7;text-align:center;font-size:18px; font-weight:bold;right:0px}
+.game_msg {display:none;position:absolute;z-index:9999;width:250px;padding:20px 0 20px 0;border:2px solid #c31e2c;background-color:#000;text-align:center;font-size:20px;font-weight:bold;}
+
+
+#container {position:absolute;z-index:999;zoom:0.5}

@@ -1,0 +1,480 @@
+﻿@charset "utf-8";
+
+::-webkit-input-placeholder{color:#888}
+::-moz-placeholder{color:#888}
+:-ms-input-placeholder{color:#888}
+:-moz-placeholder{color:#888}
+
+.game-content{overflow:hidden;margin-bottom:1px; height:590px;}
+.game-content>div{float:left;vertical-align:top}
+
+.movie-box{position:relative;width:1100px;height:620px}
+.movie-box .game_status{position:absolute;top:50px;left:20px;z-index:1;display:block;width:166px;height:126px;line-height:10px;text-align:center;background:url(/images/mobile/tableno.png?t=4)no-repeat;font-weight:bold;}
+.movie-box .game_status *{font-size:20px}
+.movie-box .game_status div{text-align:center;padding-top:10px;}
+.movie-box #game_status{padding-top:30px;}
+.movie-box .game_msg{display:none;position:absolute;z-index:1;top:50%;left:50%;margin-left: -200px;margin-top: -34px;width:400px;height:70px;box-shadow:0 0 4px #000;background-color:rgba(0,0,0,.8);font-size:30px;text-align:center;text-shadow:0 0 3px #000;font-weight:bold;font-style: italic;line-height:70px}
+.movie-box .game_msg font{font-size:30px;text-align:center;text-shadow:0 0 3px #000;font-weight:bold;font-style: italic;color:#ffc600;}
+
+.countdown_status{position:absolute;top:50px;right:20px;z-index:1;display:block;width: 84px;height: 84px;background:url(/images/mobile/time.png?t=4)no-repeat 0 0;}
+.countdown_status div{padding-top: 39px;padding-right: 4px;font-size: 30px;font-family: arial;font-weight: bold;color:#ff5a6b;letter-spacing: -4px;text-align: center;}
+
+.betting-table{position: absolute;width:598px;height:620px;}
+.table-top{position:absolute;margin:-10px 0 0 0px;height:70px;width:300px;}
+.table-top h3{position:absolute;top:24px;left:110px;color:#529891;text-shadow:0 0 4px #000;font-size:20px;}
+.table-top h3 span{padding-left:6px;color:#a0ceca;text-shadow:0 0 4px #000;font-weight:bold;font-size:20px;}
+.table-top #txt_title_limit{padding-right:65px;font-size:18px;font-weight:bold;}
+.table-top .logo{display:block;padding-top:6px}
+.table-top .logo img{width:auto;height:54px;}
+.table-top .type>div{top: 17px;z-index: 10;background-position: right 18px;right: 0;}
+.table-top .type>div>div{right: 0;top: 38px;left: inherit;overflow: hidden;width: 210px;height: auto;border-radius: 6px;border: 2px solid #14786f;background-color:#021f1d;box-shadow: 0 0 4px #000;}
+.table-top .type ul{padding: 7px;}
+.table-top .type li{padding: 8px 12px;margin-bottom: 0;}
+.table-top .type li span{font-weight:bold}
+.table-top .type li:hover{background-color:#021917}
+.table-top .type li>div>span{text-align:right;font-weight:bold;color: #fff;}
+.table-top .type>div>span{font-size:15px;letter-spacing:-1px;}
+#txt_title_game{color:#529891;text-shadow:0 0 4px #000;font-size:20px;}
+
+.betting-table .notice{top:84px;left:40px;width: 518px;border-radius:6px;background:#062320 url(/images/new/speaker.png?t=4)no-repeat 10px 13px;border:1px solid #0e3e3a;box-shadow: inset 0 0 14px rgba(0,0,0,.6),0 0 20px rgba(0,0,0,.8);}
+
+.betting-info{height:181px;overflow:hidden;background-image:url(/images/mobile/score_bg.png?t=4);}
+
+
+.betting_table_choi{width:300px;height:140px;background:url(/images/mobile/betting_web_bg.png?t=4)no-repeat center;}
+.casino-button{overflow: hidden;margin: 0px 0px 0 0px;}
+
+
+.casino-button>div{width:100%;}
+.casino-button .btn .top{text-align:center;font-size:16px;font-weight: 800;text-shadow: 1px 1px 0 #000;}
+.casino-button .btn .middle{padding:4px 0;text-align:center;color:#fff;font-size:16px;text-shadow: 1px 1px 0 #000;}
+.casino-button .btn .bottom{padding-top: 4px;text-align:center;color: #ffea00;font-weight: bold;font-size: 15px;font-style: italic;}
+.casino-button .btn>div{padding-top: 6px;height: 38px;}
+.casino-button>div>div{position: relative;float:left;vertical-align:top;height: 40px;padding: 5px 5px 14px 10px;}
+.casino-button .btn-top>div{width: 77px;}
+.casino-button .btn-top>div.center{width: 95px;}
+.casino-button .btn-bottom>div{width: 130px;padding-top:10px;}
+.casino-button .btn>div:hover,
+.casino-button .btn .select{background-color:#02453f;border-radius: 10px;box-shadow: inset 1px 1px 0 rgba(0,0,0,.3);cursor:pointer;height:40px;}
+.casino-button .btn-bottom>div:first-child{margin-right: 6px;}
+
+
+
+
+.remove_arrow{position:absolute;width:59px;height:59px;background-image:url(/images/mobile/down.png?t=4);margin:-70px 0 0 5px;cursor:pointer;}
+
+.chip{display:inline-block;width:50px;height:50px;background-image:url(/images/new/chip.png?t=4?t=3);background-repeat:no-repeat;background-size:415px 49px;}
+
+
+.chip-500{background-position:0 0}
+.chip-1000{background-position: -62px 0;}
+.chip-10000{background-position: -121px 0;}
+.chip-50000{background-position: -182px 0;}
+.chip-100000{background-position: -243px 0;}
+.chip-500000{background-position: -304px 0;}
+.chip-1000000{background-position: -365px 0;}
+
+.chip-button{position: absolute;right:25px;top:210px;text-align:center;font-size:0;width:240px;height:70px;overflow:hidden;}
+.chip-button span{position: relative;margin-left:6px;border-radius:62px;box-shadow:0 0 4px #000;opacity:1;}
+.chip-button span:hover{-webkit-transition: all 200ms ease-in;-webkit-transform: scale(1.2);-ms-transition: all 200ms ease-in;-ms-transform: scale(1.2);-moz-transition: all 200ms ease-in;-moz-transform: scale(1.2);transition: all 200ms ease-in;transform: scale(1.2);
+box-shadow:
+    0 0 15px #fff,
+    -5px 0 35px #f0f,
+    5px 0 35px #0ff;
+}
+}
+.chip-button span.select,
+.chip-button span:hover{opacity:1}
+.chip-button span:first-child{margin-left:0}
+.chip-button span.select:after{content:'';position: absolute;left: 50%;display:block;margin: -9px 0 0 -7px;width: 18px;height: 10px;background:url(/images/new/chip_select.png?t=4)no-repeat 0 0;}
+.chip-button .chip{cursor:pointer}
+.chip-button DIV{position:relative;width:800px;padding-top:10px;}
+
+.chip-button-up{position: absolute;left:0px;top:215px;cursor:pointer;}
+.chip-button-bottom{position: absolute;right:0px;top:215px;cursor:pointer;}
+
+
+.betting_foot{position:absolute;right:10px;bottom:80px;}
+.betting-button button{margin:10px 0 5px 0 ;border:0 none;background-color:transparent;background-repeat:no-repeat;color:#dfe2e6;text-shadow:1px 1px 0 #000;outline:none;cursor:pointer;overflow:hidden;}
+.betting-button button:hover{opacity:.8}
+.betting-button button:active{opacity:.6}
+.betting-button button:last-child{margin-right:0}
+.betting-button .cancel{width: 127px;height:48px;background-image:url(/images/mobile/btn_cancel.png?t=4);}
+.betting-button .cancel span{position: absolute;font-size:15pt;font-weight:bold;margin:-11px 0 0 -35px;}
+.betting-button .bet{width: 169px;height:48px;background-image:url(/images/mobile/btn_bet.png?t=4);}
+.betting-button .bet span{position: absolute;font-size:15pt;font-weight:bold;margin:-11px 0 0 -35px;color:#FFF;}
+
+
+.betting-info>div{float:left;vertical-align:top}
+.table-info{width: 1041px;height:181px;}
+.etc-info{color:#FFF;position:absolute;margin:3px 0 0 10px;}
+.etc-info img{width:22px;height:22px;}
+.etc-info li{height:30px;}
+.etc-info span{font-weight:bold;font-size:12pt;position:absolute;margin:-20px 0 0 25px;}
+
+.etc-infosub img{width:19px;height:19px;text-align:center;}
+.etc-infosub {margin:2px 0 0 0;}
+.etc-infosub .chinas ul{margin-top:3px;}
+.etc-infosub .chinas li{margin-left: 3px;}
+.etc-infosub .chinas div{width:14px;height:14px;}
+.etc-infosub .chinas2{display:inline-block;vertical-align:6px;text-align: left;width: 80px;}
+.etc-infosub .chinas2 ul{margin-top:3px;}
+.etc-infosub .chinas2 li{margin-left: 3px;}
+.etc-infosub .chinas2 div{width:14px;height:14px;}
+
+.myinfo{position:absolute;top:35px;padding: 20px;width:290px;}
+.myinfo .money{margin-bottom: 8px;padding: 4px 8px;}
+.myinfo .money li{height: 38px;line-height: 38px;}
+.myinfo .money li:last-child{border:0 none}
+.myinfo .money span:first-child{color:#ffffff;font-size: 18px;}
+.myinfo .money span:last-child{float:right}
+.myinfo .money span{font-weight:bold;font-size: 18px;}
+.myinfo #user_money{color:#fff581;}
+
+.game-setting{position:absolute;top:180px;left:12px;}
+.game-setting li{padding-left:5px;padding-top:7px;}
+.game-setting .howto div{width:147px;height:56px;background-image:url(/images/mobile/right_1.png?t=4);margin:0 0 0 0;cursor:pointer;}
+.game-setting span{position:relative;color:#cacaca;font-size:14pt;font-weight:bold;top:19px;left:47px;}
+
+.game-setting .history div{width:147px;height:56px;background-image:url(/images/mobile/right_2.png?t=4);margin:0 0 0 0;cursor:pointer;}
+.game-setting .exit div{width:147px;height:56px;background-image:url(/images/mobile/right_3.png?t=4);margin:0 0 0 0;cursor:pointer;}
+.game-setting .close div{width:147px;height:56px;background-image:url(/images/mobile/right_4.png?t=4);margin:0 0 0 0;cursor:pointer;}
+
+
+.scoreboard{position:relative;height: 170px;font-size:0;text-align:left;}
+.scoreboard ul{display:inline-block;vertical-align: top;float: left;vertical-align:top;text-align:left;font-size:0;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-ms-flex-line-pack: start;}
+.scoreboard li{position:relative;display:inline-block;vertical-align:top;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.scoreboard img{position:absolute;top:0;left:0;width:100%;height:100%}
+/*최이사 변경 180 -> 150*/
+.scoreboard .beadplate{border-left: 1px solid #ddd;width:390px;height: 150px;background: url(/images/new/scoreboard_txt5.png?t=4)no-repeat center center;background-color: #fff;}
+.scoreboard .beadplate li{width:24px;height:24px;}
+.scoreboard .beadplate li DIV{width:100%;height:100%;}
+
+.scoreboard .beadplate2{border-left: 1px solid #ddd;width:345px;height: 156px;background: url(/images/new/scoreboard_txt5.png?t=4)no-repeat center center;background-color: #fff;margin-right:5px;}
+.scoreboard .beadplate2 li{width:25px;height:25px;}
+.scoreboard .beadplate2 li DIV{width:100%;height:100%;}
+
+/*최이사 변경 180 -> 150*/
+.scoreboard .beadplate3{border-left: 1px solid #ddd;width:390px;height: 120px;background: url(/images/new/scoreboard_txt5.png?t=4)no-repeat center center;background-color: #fff;}
+.scoreboard .beadplate3 li{width:19px;height:19px;}
+.scoreboard .beadplate3 li DIV{width:100%;height:100%;}
+
+.scoreboard .bigroad,
+.scoreboard .smallroad{width:590px;height:78px;}
+.scoreboard .bigroad{background:url(/images/new/scoreboard_txt4.png?t=4)no-repeat center center;background-color: #fff;}
+.scoreboard .bigroad DIV{width: 12px;height:12px;}
+.scoreboard .smallroad,
+.scoreboard .bigeyeboy,
+.scoreboard .cockroachpig{height: 39px;}
+.scoreboard .smallroad{background:url(/images/new/scoreboard_txt2.png?t=4)no-repeat center center;background-color: #fff;}
+.scoreboard .bigroad li,
+.scoreboard .smallroad li,
+.scoreboard .bigeyeboy li,
+.scoreboard .cockroachpig li{width: 12px;height:12px;text-align:center;}
+.scoreboard .smallroad li,
+.scoreboard .cockroachpig li{position:relative;}
+.scoreboard li span{position:absolute;width:5px;height:5px;}
+.lefttop{top:0;left:0;}
+.righttop{bottom:0;left:0;}
+.leftbottom{top:0;right:0}
+.rightbottom{bottom:0;right:0}
+.scoreboard .bigeyeboy{width:302px}
+.scoreboard .cockroachpig{width:288px}
+.scoreboard .cockroachpig{background:url(/images/new/scoreboard_txt1.png?t=4)no-repeat center center;background-color: #fff;}
+.scoreboard .bigeyeboy{background:url(/images/new/scoreboard_txt3.png?t=4)no-repeat center center;background-color: #fff;}
+.scoreboard .bigroad li DIV{text-align:center;}
+
+
+
+.scoreboard2{height: 180px;background-color: #fff;font-size:0;text-align:left;}
+.scoreboard2 ul{display:inline-block;vertical-align: top;float: left;vertical-align:top;text-align:left;font-size:0;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-ms-flex-line-pack: start;}
+.scoreboard2 li{position:relative;display:inline-block;vertical-align:top;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.scoreboard2 img{position:absolute;top:0;left:0;width:100%;height:100%}
+
+.scoreboard2 .beadplate{border-left: 1px solid #ddd;width:144px;height: 150px;}
+.scoreboard2 .beadplate li{width:24px;height:24px;}
+.scoreboard2 .beadplate li DIV{width:100%;height:100%;}
+
+.scoreboard2 .bigroad,
+.scoreboard2 .smallroad{padding-left:6px;width:246px;height:75px;}
+.scoreboard2 .bigroad{}
+.scoreboard2 .bigroad DIV{width: 11.5px;height:11.5px;}
+.scoreboard2 .smallroad,
+.scoreboard2 .bigeyeboy{padding-left:6px;height: 37.5px;}
+.scoreboard2 .cockroachpig{padding-left:16.5px;height: 37.5px;}
+.scoreboard2 .smallroad{}
+.scoreboard2 .bigroad li,
+.scoreboard2 .smallroad li,
+.scoreboard2 .bigeyeboy li,
+.scoreboard2 .cockroachpig li{width: 11.5px;height:11.5px;text-align:center;}
+.scoreboard2 .smallroad li,
+.scoreboard2 .cockroachpig li{position:relative;}
+.scoreboard2 li span{position:absolute;width:5.75px;height:5.75px;}
+.lefttop{top:0;left:0;}
+.righttop{bottom:0;left:0;}
+.leftbottom{top:0;right:0}
+.rightbottom{bottom:0;right:0}
+.scoreboard2 .bigeyeboy,
+.scoreboard2 .cockroachpig{width:121px;}
+.scoreboard2 .cockroachpig{}
+.scoreboard2 .bigeyeboy{}
+.scoreboard2 .bigroad li DIV{text-align:center;}
+
+
+.layerpopup{position:absolute;overflow:hidden;top:0;left:0;z-index:1000;width:100%;height:100%;}
+.layerpopup.gameover .content-info{box-shadow:none}
+.room-change-list{position:absolute;top:0;right:0;z-index: 1;width:300px;height:100%;overflow-y:auto;overflow-x:hidden;background:#444 url(/images/new/bg_tablechange.png?t=4)no-repeat left bottom;background-size:100% 100%}
+.room-change-list>div{position:relative}
+.room-change-list h4{height:40px;background:url(/images/new/bg_tablemove.png?t=4)no-repeat 0 0;color:#fff;font-size:15px;line-height:40px;text-indent:12px;}
+.layerpopup .close,
+.room-change-list .close{position:absolute;top:0;right:0;width:40px;height:40px;background:url(/images/new/icon_close.png?t=4)no-repeat center center;background-size:18px;cursor:pointer}
+.layerpopup .close:hover{opacity:.8}
+.room-change-list .list{height: 728px;overflow-y:auto;overflow-x:hidden;}
+.room-change-list .info{border:1px solid #2e2e2e;background-color:#1b1b1b;box-shadow:0 0 10px #000;margin:8px;}
+.room-change-list .info:hover{border:1px solid #888}
+.room-change-list .list h5{position:relative;padding: 24px 0 0 106px!important;height: 46px;font-size: 15px;color: #fff;}
+.room-change-list .list h5 span{font-size:15px}
+.room-change-list .list h5 img{position:absolute;top: 8px;left: 10px;height: 48px;width:auto;}
+.room-change-list .scoreboard{position: relative;margin: 0 8px 8px 8px;overflow:hidden;height: 125px;}
+.room-change-list .beadplate{position: absolute;transform:scale(0.7);top: -27px;left: -59px;}
+.bg-opacity{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.8)}
+.bg-opacity2{position:absolute;top:590px;left:0;width:100%;height:500px;background-color:rgba(0,0,0,.8)}
+.bg-opacity3{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,1)}
+
+.layerpopup .content{position:relative;z-index:1;display:table;width:100%;height: 100%;top:70px;}
+.layerpopup .content>div{display:table-cell;height: 100%;text-align:center;vertical-align:middle;}
+.layerpopup .content-info{display:inline-block;border-radius:2px;box-shadow:0 0 10px #000;border:2px solid #7e8bbe;background-color:#23293a}
+.layerpopup.gameover .content-info{background:none;border:0 none}
+.layerpopup table{table-layout:fixed;width:100%}
+.layerpopup .title{position:relative;border-bottom:1px solid #151821;background-color:#253150;height: 40px;}
+.layerpopup .title h4{padding:12px;color:#fff;font-size:15px;}
+.layerpopup .content-box{padding:30px 20px;}
+.layerpopup .content-box .text{padding:20px 0;text-align:center;color:#fff}
+.layerpopup .content-box .text p{text-align:center;font-size:17px;}
+.layerpopup table th,
+.layerpopup table td{border: 1px solid #13151b;text-align:center;color:#fff;}
+.layerpopup thead th{height: 40px;background-color:#3a425a;box-shadow: inset 0 1px 0 rgba(255,255,255,.1);vertical-align: middle;font-weight:normal}
+.layerpopup thead th input{margin-right:4px;vertical-align:-3px;}
+.layerpopup tbody td{padding:20px;background-color: #1a1d28;}
+.layerpopup.rule th,
+.layerpopup.rule td{height:auto;padding:10px 0}
+.layerpopup h5:first-child{padding-top:0}
+.layerpopup h5{padding:30px 0 10px 4px;color:#d3dfff;text-shadow:0 0 4px #000;font-size:17px;}
+.layerpopup.result td img{margin-right:2px;width:20px;height:20px;}
+.layerpopup.result td img:last-child{margin-right:0}
+.layerpopup.result tr:hover td{background-color:#0f1017}
+.layerpopup.result tbody td{vertical-align:middle;padding:4px}
+.layerpopup.result .txt-red,
+.layerpopup.result .txt-blue{font-weight:bold}
+
+.layerpopup.result .scroll{border: 1px solid #32384c;overflow-y:scroll;max-height:200px;}
+.layerpopup table.title-table{border: 1px solid #3a425a;background-color: #1a1d28;margin-bottom:20px;}
+.layerpopup table.title-table th{padding: 10px 22px;height:40px;border:0 none;vertical-align:middle;text-align:left;font-size:15px;}
+.layerpopup table.title-table button{border: 1px solid #000;box-shadow: inset 0 1px 0 rgba(255,255,255,.1);background-color: #40589c;display:inline-block;padding:0 30px;color: #fff;text-shadow: 0 0 3px #000;height:32px;border-radius:3px;font-weight:bold;font-size:15px;outline:none;cursor:pointer;}
+.layerpopup table.title-table button:hover{opacity:.8}
+.layerpopup table.title-table input{margin-left: 10px;border: 1px solid #5f6c92;background-color: #3a425a;height:30px;padding:0 10px;color:#fff;font-size:13px;}
+
+.layer-button{padding-top:30px;text-align:center}
+.layer-button li{display:inline-block;margin-right:20px;}
+.layer-button li:last-child{margin-right:0}
+.layer-button a{display:block;height:32px;padding:0 40px;color:#fff;border: 1px solid #2e4f9a;background-color: #263c6d;box-shadow: inset 0 1px 0 rgba(255,255,255,.3),0 0 10px #111;font-size:15px;font-weight:bold;line-height:32px;}
+
+/*---- Card Info ---*/
+
+/*---- 01. Heart ---*/	
+.h_1 {background:url(/images/new/poker.png?t=4) -7px -7px no-repeat;background-size:1115px 510px;}
+.h_2 {background:url(/images/new/poker.png?t=4) -92px -7px no-repeat;background-size:1115px 510px;}
+.h_3 {background:url(/images/new/poker.png?t=4) -177px -7px no-repeat;background-size:1115px 510px;}
+.h_4 {background:url(/images/new/poker.png?t=4) -262px -7px no-repeat;background-size:1115px 510px;}
+.h_5 {background:url(/images/new/poker.png?t=4) -347px -7px no-repeat;background-size:1115px 510px;}
+.h_6 {background:url(/images/new/poker.png?t=4) -432px -7px no-repeat;background-size:1115px 510px;}
+.h_7 {background:url(/images/new/poker.png?t=4) -517px -7px no-repeat;background-size:1115px 510px;}
+.h_8 {background:url(/images/new/poker.png?t=4) -602px -7px no-repeat;background-size:1115px 510px;}
+.h_9 {background:url(/images/new/poker.png?t=4) -687px -7px no-repeat;background-size:1115px 510px;}
+.h_10 {background:url(/images/new/poker.png?t=4) -772px -7px no-repeat;background-size:1115px 510px;}
+.h_11 {background:url(/images/new/poker.png?t=4) -857px -7px no-repeat;background-size:1115px 510px;}
+.h_12 {background:url(/images/new/poker.png?t=4) -942px -7px no-repeat;background-size:1115px 510px;}
+.h_13 {background:url(/images/new/poker.png?t=4) -1027px -7px no-repeat;background-size:1115px 510px;}
+
+/*---- 02. Dia ---*/	
+.d_1 {background:url(/images/new/poker.png?t=4) -7px -132px no-repeat;background-size:1115px 510px;}
+.d_2 {background:url(/images/new/poker.png?t=4) -92px -132px no-repeat;background-size:1115px 510px;}
+.d_3 {background:url(/images/new/poker.png?t=4) -177px -132px no-repeat;background-size:1115px 510px;}
+.d_4 {background:url(/images/new/poker.png?t=4) -262px -132px no-repeat;background-size:1115px 510px;}
+.d_5 {background:url(/images/new/poker.png?t=4) -347px -132px no-repeat;background-size:1115px 510px;}
+.d_6 {background:url(/images/new/poker.png?t=4) -432px -132px no-repeat;background-size:1115px 510px;}
+.d_7 {background:url(/images/new/poker.png?t=4) -517px -132px no-repeat;background-size:1115px 510px;}
+.d_8 {background:url(/images/new/poker.png?t=4) -602px -132px no-repeat;background-size:1115px 510px;}
+.d_9 {background:url(/images/new/poker.png?t=4) -687px -132px no-repeat;background-size:1115px 510px;}
+.d_10 {background:url(/images/new/poker.png?t=4) -772px -132px no-repeat;background-size:1115px 510px;}
+.d_11 {background:url(/images/new/poker.png?t=4) -857px -132px no-repeat;background-size:1115px 510px;}
+.d_12 {background:url(/images/new/poker.png?t=4) -942px -132px no-repeat;background-size:1115px 510px;}
+.d_13 {background:url(/images/new/poker.png?t=4) -1027px -132px no-repeat;background-size:1115px 510px;}
+
+/*---- 03. clover ---*/	
+.c_1 {background:url(/images/new/poker.png?t=4) -7px -257px no-repeat;background-size:1115px 510px;}
+.c_2 {background:url(/images/new/poker.png?t=4) -92px -257px no-repeat;background-size:1115px 510px;}
+.c_3 {background:url(/images/new/poker.png?t=4) -177px -257px no-repeat;background-size:1115px 510px;}
+.c_4 {background:url(/images/new/poker.png?t=4) -262px -257px no-repeat;background-size:1115px 510px;}
+.c_5 {background:url(/images/new/poker.png?t=4) -347px -257px no-repeat;background-size:1115px 510px;}
+.c_6 {background:url(/images/new/poker.png?t=4) -432px -257px no-repeat;background-size:1115px 510px;}
+.c_7 {background:url(/images/new/poker.png?t=4) -517px -257px no-repeat;background-size:1115px 510px;}
+.c_8 {background:url(/images/new/poker.png?t=4) -602px -257px no-repeat;background-size:1115px 510px;}
+.c_9 {background:url(/images/new/poker.png?t=4) -687px -257px no-repeat;background-size:1115px 510px;}
+.c_10 {background:url(/images/new/poker.png?t=4) -772px -257px no-repeat;background-size:1115px 510px;}
+.c_11 {background:url(/images/new/poker.png?t=4) -857px -257px no-repeat;background-size:1115px 510px;}
+.c_12 {background:url(/images/new/poker.png?t=4) -942px -257px no-repeat;background-size:1115px 510px;}
+.c_13 {background:url(/images/new/poker.png?t=4) -1027px -257px no-repeat;background-size:1115px 510px;}
+
+/*---- 04. spade ---*/	
+.s_1 {background:url(/images/new/poker.png?t=4) -7px -382px no-repeat;background-size:1115px 510px;}
+.s_2 {background:url(/images/new/poker.png?t=4) -92px -382px no-repeat;background-size:1115px 510px;}
+.s_3 {background:url(/images/new/poker.png?t=4) -177px -382px no-repeat;background-size:1115px 510px;}
+.s_4 {background:url(/images/new/poker.png?t=4) -262px -382px no-repeat;background-size:1115px 510px;}
+.s_5 {background:url(/images/new/poker.png?t=4) -347px -382px no-repeat;background-size:1115px 510px;}
+.s_6 {background:url(/images/new/poker.png?t=4) -432px -382px no-repeat;background-size:1115px 510px;}
+.s_7 {background:url(/images/new/poker.png?t=4) -517px -382px no-repeat;background-size:1115px 510px;}
+.s_8 {background:url(/images/new/poker.png?t=4) -602px -382px no-repeat;background-size:1115px 510px;}
+.s_9 {background:url(/images/new/poker.png?t=4) -687px -382px no-repeat;background-size:1115px 510px;}
+.s_10 {background:url(/images/new/poker.png?t=4) -772px -382px no-repeat;background-size:1115px 510px;}
+.s_11 {background:url(/images/new/poker.png?t=4) -857px -382px no-repeat;background-size:1115px 510px;}
+.s_12 {background:url(/images/new/poker.png?t=4) -942px -382px no-repeat;background-size:1115px 510px;}
+.s_13 {background:url(/images/new/poker.png?t=4) -1027px -382px no-repeat;background-size:1115px 510px;}
+
+/*---- Card Info ---*/
+.item_result {position: absolute;left:0;bottom: 0px;right:0;height: 180px;z-index:10;}
+.item_result .item {position: relative;width: 564px;height:169px;margin:0 auto;background:url(/images/mobile/result.png?t=4) no-repeat center center;background-size:auto 100%;}
+.item_result .r_card {position: absolute;bottom:15%;height:52%;transform: scale(1.2);}
+.item_result .r_card img {height:100%; vertical-align: bottom}
+.item_result .card1 {top:5px;left:-430px;width: 390px;text-align: right;}
+.item_result .card1 .popCardAreaP1 {width:80px;height:118px;float:right;border-radius: 6px;margin-top:10px;}
+.item_result .card1 .popCardAreaP2 {width:80px;height:118px;float:right;margin-right:10px;border-radius: 6px;margin-top:10px;}
+.item_result .card1 .popCardAreaP3 {top:-9px;position:absolute;width:80px;height:118px;margin-left: 110px;-webkit-transform: rotate(90deg);border-radius: 4px;transform: rotate(90deg);}
+.item_result .card2 {top:0px;right:-430px;width: 390px;}
+.item_result .card2 .popCardAreaB1 {width:80px;height:118px;float:left;margin-top:10px;}
+.item_result .card2 .popCardAreaB2 {width:80px;height:118px;float:left;margin-left:10px;margin-top:10px;}
+.item_result .card2 .popCardAreaB3 {top:-9px;position:absolute;width: 80px;height:118px;float:right;border-radius: 4px;margin-left: 200px;-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+.item_result .r_score {position: absolute;left: 450px;top: 80px;line-height:1em;text-align: center;color: #fff;text-shadow: 0 0 4px #000;font-size: 70px;font-weight: bold;}/*width:3%;*/
+.item_result .r_score2 {left:auto;right: 440px;}
+.item_result .r_img {position:absolute;width:325px;height:324px;top:-120px;left:120px;background-size:contain;z-index:1;background-repeat: no-repeat;background-position: center center;background-size: 241px auto;transform: scale(1.3);}
+.item_result .r_baker {background-image: url(/images/new/r_banker.png?t=4)}
+.item_result .r_tie {background-image: url(/images/new/r_tie.png?t=4)}
+.item_result .r_player {background-image: url(/images/new/r_player.png?t=4)}
+
+.layerpopup.gameover .result-bonus{position:relative;height: 520px;background: url(/images/new/bg_gameresult.png?t=4)no-repeat center top;z-index: 1;}
+.gameover .result-bonus .money{position:absolute;top:80px;left:0;width:100%;text-align:center;color:#ff0;font-size:46px;font-style:italic;font-weight:bold;text-shadow:0 0 4px #000}
+.gameover .result-bonus ul{position:absolute;top: 255px;left:50%;margin-left: -330px;display:table;width: 660px;}
+.gameover .result-bonus li{display:table-cell;width:33.33%;vertical-align:middle;text-align:center;font-size: 30px;text-shadow: 0 0 4px #000;font-weight: bold;}
+.gameover .animation{position:absolute;top:20px;left:240px;}
+.gameover .animation-etc{position:absolute;top:20px;right:240px}
+.gameover .animation2{position:absolute;top:20px;left:480px;}
+.gameover .animation-etc2{position:absolute;top:20px;right:480px;}
+
+
+
+
+
+.left_re{position:absolute;top:140px;right:10px;z-index:5;}
+.left_re img{padding-top:10px;cursor:pointer;}
+
+.left_menu{position:absolute;top:195px;left:-333px;z-index:5;}
+.left_menu_arrow{position:relative;margin:-200px 0 0 333px;width:44px;height:96px;background-image:url(/images/mobile/left.png?t=4);background-position:-58px -28px;background-size:102px 154px;cursor:pointer;z-index:6;}
+.left_menu_box{width:333px;height:319px;background-image:url(/images/mobile/right_bg.png?t=4);}
+
+
+
+
+.user_money_top{position:absolute;top:50px;right:10px;width:262px;height:83px;background-image:url(/images/mobile/money.png?t=4);z-index:5;}
+.user_money_top #user_money_id{position:relative;top:25px;right:-120px;color:#f0f07a;font-size:17pt;font-weight:bold;}
+
+.prediction_banker{cursor:pointer;}
+.prediction_player{cursor:pointer;}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {}
+
+
+
+
+/*-------- Game Result Icon -----------*/
+/*[1] ��Ŀ*/
+.gr_1 {background:url(/images/new/v_1.png?t=4),url(https://img.tg-00.com/new/v_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_2 {background:url(/images/new/v_3.png?t=4),url(https://img.tg-00.com/new/v_3.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_3 {background:url(/images/new/v_2.png?t=4),url(https://img.tg-00.com/new/v_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_4 {background:url(/images/new/v_4.png?t=4),url(https://img.tg-00.com/new/v_4.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.gr_5 {background:url(/images/new/v_5.png?t=4),url(https://img.tg-00.com/new/v_5.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_6 {background:url(/images/new/v_7.png?t=4),url(https://img.tg-00.com/new/v_7.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_7 {background:url(/images/new/v_6.png?t=4),url(https://img.tg-00.com/new/v_6.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_8 {background:url(/images/new/v_8.png?t=4),url(https://img.tg-00.com/new/v_8.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[3] �÷��̾�*/
+.gr_9 {background:url(/images/new/v_9.png?t=4),url(https://img.tg-00.com/new/v_9.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_10 {background:url(/images/new/v_11.png?t=4),url(https://img.tg-00.com/new/v_11.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_11 {background:url(/images/new/v_10.png?t=4),url(https://img.tg-00.com/new/v_10.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.gr_12 {background:url(/images/new/v_12.png?t=4),url(https://img.tg-00.com/new/v_12.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+/*-------- Game Result Icon -----------*/
+
+/*-------- Game Line Result Icon -----------*/
+
+/*[1] ��Ŀ*/
+.glr_1 {background:url(/images/new/sv_1.png?t=4),url(https://img.tg-00.com/new/sv_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.glr_2 {background:url(/images/new/sv_3.png?t=4),url(https://img.tg-00.com/new/sv_3.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.glr_3 {background:url(/images/new/sv_2.png?t=4),url(https://img.tg-00.com/new/sv_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.glr_4 {background:url(/images/new/sv_4.png?t=4),url(https://img.tg-00.com/new/sv_4.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.glr_5 {background:url(/images/new/sv_5.png?t=4),url(https://img.tg-00.com/new/sv_5.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.glr_6 {background:url(/images/new/sv_7.png?t=4),url(https://img.tg-00.com/new/sv_7.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.glr_7 {background:url(/images/new/sv_6.png?t=4),url(https://img.tg-00.com/new/sv_6.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.glr_8 {background:url(/images/new/sv_8.png?t=4),url(https://img.tg-00.com/new/sv_8.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[1] ��Ŀ*/
+.glr_1_1 {background:url(/images/new/sv_1.png?t=4) , url(/images/new/ttt.png?t=4),url(https://img.tg-00.com/new/sv_1.png?t=4) , url(https://img.tg-00.com/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+.glr_2_1 {background:url(/images/new/sv_3.png?t=4) , url(/images/new/ttt.png?t=4),url(https://img.tg-00.com/new/sv_3.png?t=4) , url(https://img.tg-00.com/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+.glr_3_1 {background:url(/images/new/sv_2.png?t=4) , url(/images/new/ttt.png?t=4),url(https://img.tg-00.com/new/sv_2.png?t=4) , url(https://img.tg-00.com/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+.glr_4_1 {background:url(/images/new/sv_4.png?t=4) , url(/images/new/ttt.png?t=4),url(https://img.tg-00.com/new/sv_4.png?t=4) , url(https://img.tg-00.com/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+
+/*[2] �÷��̾�*/
+.glr_5_1 {background:url(/images/new/sv_5.png?t=4) , url(/images/new/ttt.png?t=4),url(/images/new/sv_5.png?t=4) , url(/images/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+.glr_6_1 {background:url(/images/new/sv_7.png?t=4) , url(/images/new/ttt.png?t=4),url(/images/new/sv_7.png?t=4) , url(/images/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+.glr_7_1 {background:url(/images/new/sv_6.png?t=4) , url(/images/new/ttt.png?t=4),url(/images/new/sv_6.png?t=4) , url(/images/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+.glr_8_1 {background:url(/images/new/sv_8.png?t=4) , url(/images/new/ttt.png?t=4),url(/images/new/sv_8.png?t=4) , url(/images/new/ttt.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain;font-size:8px;}
+
+/*-------- Game Line Result Icon -----------*/
+
+/*-------- China Point Icon -----------*/
+/*[1] �߱���1 ( 1 : ȫ / 2 : û) */
+.c1_1 {background:url(/images/new/c1_1.png?t=4),url(https://img.tg-00.com/new/c1_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.c1_2 {background:url(/images/new/c1_2.png?t=4),url(https://img.tg-00.com/new/c1_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[2] �߱���2 ( 1 : ȫ / 2 : û) */
+.c2_1 {background:url(/images/new/c2_1.png?t=4),url(https://img.tg-00.com/new/c2_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.c2_2 {background:url(/images/new/c2_2.png?t=4),url(https://img.tg-00.com/new/c2_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[3] �߱���2 ( 1 : ȫ / 2 : û) */
+.c3_1 {background:url(/images/new/c3_1.png?t=4),url(https://img.tg-00.com/new/c3_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.c3_2 {background:url(/images/new/c3_2.png?t=4),url(https://img.tg-00.com/new/c3_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/* ====================��ȣ���============ */
+/*[1] �߱���1 ( 1 : ȫ / 2 : û) */
+.r_c1_1 {background:url(/images/new/c1_1.png?t=4),url(https://img.tg-00.com/new/c1_1.png?t=4);background-position:center center;background-repeat:no-repeat; background-size:contain}
+.r_c1_2 {background:url(/images/new/c1_2.png?t=4),url(https://img.tg-00.com/new/c1_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[2] �߱���2 ( 1 : ȫ / 2 : û) */
+.r_c2_1 {background:url(/images/new/c2_1.png?t=4),url(https://img.tg-00.com/new/c2_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.r_c2_2 {background:url(/images/new/c2_2.png?t=4),url(https://img.tg-00.com/new/c2_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*[3] �߱���2 ( 1 : ȫ / 2 : û) */
+.r_c3_1 {background:url(/images/new/c3_1.png?t=4),url(https://img.tg-00.com/new/c3_1.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+.r_c3_2 {background:url(/images/new/c3_2.png?t=4),url(https://img.tg-00.com/new/c3_2.png?t=4);background-position:center center;background-repeat:no-repeat;background-size:contain}
+
+/*-------- China Point Icon -----------*/
+
+.sound_mute_class{
+	position:absolute;bottom:20px;right:20px;z-index:11;display:block;width: 30px;height: 30px;
+	cursor:pointer;
+	display:none;
+}
+.sound_mute_class DIV{background:url(/images/new/sound_1.png?t=4)no-repeat 0 0;background-size:100% 100%;width: 30px;height: 30px;}

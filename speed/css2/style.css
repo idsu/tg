@@ -1,0 +1,465 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {margin:0; padding:0; outline: none; font-family:"Nanum Gothic", sans-serif; }
+em {font-style: normal}
+a {text-decoration: none}
+ul, li, ol {list-style:none;}
+button {background:none; border:0; vertical-align: middle; cursor: pointer}
+img {vertical-align: middle}
+body {font-size:18px; background: #000;}
+body, html {
+	height:100%;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+::-webkit-scrollbar {width: 8px; height: 8px;}
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: none;}
+::-webkit-scrollbar-track {-webkit-border-radius: 10px; border-radius:10px; background:#333;  }
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background:#767676; border-radius: 10px;}
+
+
+
+.main {min-width:1100px; max-height:1013px; margin:0 auto; background:#000;}
+.header {position: relative; height:6.2%; margin-bottom:1%;  background:#3c3c3c; max-height:56px; overflow:hidden;}
+.header h1 {position: absolute; left:3.2%; top:0; bottom:0;  color:#f3e5b1; font-size:1em;}
+.header h1 img {height:100%; vertical-align: middle}
+.header h1 span {color:#fff;}
+.header .blank {width:100%; max-height:56px}
+.header .top_links {position: absolute; right:3.2%; top:0; bottom:0; color:#d2d2d2; white-space: nowrap; text-align: right; width:65%;}
+.header .top_links select {padding:2px;border:1px solid #d2d2d2;background-color:#000;color:#fff}
+.header .top_links button {padding-left:5%; height:90%; color:#d2d2d2; white-space: nowrap; vertical-align: middle; background-repeat: no-repeat; background-position: 0 0; background-size:auto 100%;}
+.header .top_links span {display: inline-block; margin:0 1.7%; vertical-align: middle}
+.header .t1 {background-image:url('/images/new/ico_top1.png')}
+.header .t2 {background-image:url('/images/new/ico_top2.png')}
+.header .t3 {background-image:url('/images/new/ico_top3.png')}
+.header .t4 {background-image:url('/images/new/ico_top4.png')}
+.header .t5 {background-image:url('/images/new/ico_top5.png')}
+.header .top_links button:hover {color:#f59d39}
+.header .t1:hover {background-image:url('/images/new/ico_top1_on.png')}
+.header .t2:hover {background-image:url('/images/new/ico_top2_on.png')}
+.header .t3:hover {background-image:url('/images/new/ico_top3_on.png')}
+.header .t4:hover {background-image:url('/images/new/ico_top4_on.png')}
+.header .t5:hover {background-image:url('/images/new/ico_top5_on.png')}
+
+.content {padding:0 3.2%; max-width:1800px; }
+.notice {position: relative; margin:1% 0 0; height: 25px; width:100%; overflow: hidden; white-space: nowrap;}
+.notice div {display: block;  width: 200%; height: 30px; position: absolute; overflow: hidden; animation: marquee 20s linear infinite;}
+.notice a {color:#fff;  white-space: nowrap; margin-left:10px;}
+.gameContainer {position: relative; overflow: hidden; margin:0 0 0.5%;}
+.gameContainer .movieBox {position: absolute; left:0; top:0; bottom:0;  width:60.5%; }
+.gameContainer .stateBox {position: absolute; right:0; top:0; bottom:0;  width:37.5%;  background:#000;}
+
+.stateBox .item1 {position:relative; height:6.8%; margin-bottom:4%;}
+.stateBox .item1 div {height:100%;}
+.stateBox .item1 button {padding:0 5%; height:100%; border:1px solid #494949; color:#808080;}
+.stateBox .item1 button img {height:100%;}
+.stateBox .item1 button.on {border-color:#c31e2c; color:#fff;}
+.stateBox .item1 .b_list {position: absolute; right:0; top:0; padding:0 3%; white-space: nowrap}
+.stateBox .item1 .b_list:hover {border:1px solid #007103; background:#0c3f31; color:#fff;}
+.stateBox .item1 .b_arr1 {margin-right:5px; border:none; padding:0; font-size:0;}
+.stateBox .item1 .b_arr2 {margin-left:5px; border:none; padding:0; font-size:0;}
+
+.stateBox .item2 {width:100%; height:17.2%; margin-bottom:4%; border:1px solid #494949; border-left:0; overflow:hidden; box-sizing: border-box}
+.stateBox .item2 li {position: relative; float:left; width:50%; height:50%; padding-left:18%; color:#fff; line-height:2.7em; border-bottom:1px solid #494949; box-sizing: border-box; overflow:hidden;}
+.stateBox .item2 li strong {position: absolute; left:0; top:0; bottom:0; display: block; width:32%; text-align: center; border-right:1px solid #494949; border-left:1px solid #494949; color:#f3e5b1;}
+.stateBox .item2 li:last-child {border-bottom:0; color:#f59d39;}
+
+.stateBox .limitBox {width:50%; height:17.2%; background:#000;position:absolute;top:19.4%;right:0px;z-index:999;display:none}
+.stateBox .limitBox .item5 {width:100%; height:100%; margin-bottom:4%; border:1px solid #494949; border-left:0; overflow:hidden; box-sizing: border-box}
+.stateBox .limitBox .item5 li {position: relative; float:left; width:100%; height:50%; padding-left:18%; color:#fff; line-height:2.7em; border-bottom:1px solid #494949; box-sizing: border-box; overflow:hidden;}
+.stateBox .limitBox .item5 li strong {position: absolute; left:0; top:0; bottom:0; display: block; width:32%; text-align: center; border-right:1px solid #494949; border-left:1px solid #494949; color:#f3e5b1;}
+.stateBox .limitBox .item5 li span {margin-left: 20%;}
+
+
+.stateBox .item3 {width:100%; height:39.6%; margin-bottom:3.5%; border:1px solid #007103; overflow:hidden; box-sizing: border-box; border-radius: 0 0 20px 20px; overflow:hidden;}
+.stateBox .item3 li {float:left; color:#fff; height:50%; text-align: center; box-sizing: border-box; background: #0c3f31;}
+.stateBox .item3 li div {display: table; width:100%; height:100%;}
+.stateBox .item3 li div span {display: table-cell; vertical-align: middle}
+.stateBox .item3 li:hover, .stateBox .item3 li.on {background:#082920;}
+.stateBox .item3 .l1 {width:33.3%;cursor:pointer;}
+.stateBox .item3 .l2 {width:33.4%; border-left:1px solid #007103; border-right:1px solid #007103;cursor:pointer;}
+.stateBox .item3 .l3 {width:33.3%;cursor:pointer;}
+.stateBox .item3 .l4 {width:50%; border-top:1px solid #007103;cursor:pointer; }
+.stateBox .item3 .l5 {width:50%; border-left:1px solid #007103; border-top:1px solid #007103; cursor:pointer;}
+
+.stateBox .item4 {height:16.2%; overflow: hidden; text-align: center}
+.stateBox .item4 span {; text-align:center; display:none; font-size:10px; width: 0; height: 0; margin:0 auto; border-right: 5px solid transparent; border-left: 5px solid transparent; border-top: 5px solid darkorange;}
+.stateBox .item4 .i_coin {display: inline-block; width:12%; text-align: center; color:#fff; font-size:0.8em;}
+.stateBox .item4 .i_coin img {display: block; width:70%; margin:10px auto 0;cursor:pointer;}
+/*
+.stateBox .item4 .i_coin .on {margin-top:0;}
+.stateBox .item4 .i_coin .on span {display:block;}
+
+.stateBox .item4 .i_coin:hover img {margin-top:0;}
+.stateBox .item4 .i_coin:hover span {display: block}
+*/
+.stateBox .item4 .i_coin .on {margin-top:0;}
+
+
+.stateBox .item4 .c1 span {border-top: 5px solid #b9b9b9;}
+.stateBox .item4 .c2 span {border-top: 5px solid #e6830f;}
+.stateBox .item4 .c3 span {border-top: 5px solid #db4118;}
+.stateBox .item4 .c4 span {border-top: 5px solid #5eb427;}
+.stateBox .item4 .c5 span {border-top: 5px solid #329a8d;}
+.stateBox .item4 .c6 span {border-top: 5px solid #334a9d;}
+.stateBox .item4 .c7 span {border-top: 5px solid #a42d8a;}
+.stateBox .item4 .c8 span {border-top: 5px solid #ce1d25;}
+
+.stateBox .itemBtn {position: absolute; left:0; right:0; bottom:0; height:6.7%}
+.stateBox .itemBtn button {display:block; float:left; height:100%; background:red; width:23.8%; margin-right:1%; border-radius: 2px; color:#fff;}
+.stateBox .itemBtn .b1:hover {background: linear-gradient(#555555, #888888); }
+.stateBox .itemBtn .b1 {background: linear-gradient(#888888, #555555);  border:1px solid #878787; }
+.stateBox .itemBtn .b2:hover {background: linear-gradient(#264e7e, #3667a9);}
+.stateBox .itemBtn .b2 {background: linear-gradient(#3667a9, #264e7e); border:1px solid #467ec1; }
+.stateBox .itemBtn .b3:hover {background: linear-gradient(#9b0f1a, #cd1823); }
+.stateBox .itemBtn .b3 {float:right; width:50.4%; margin-right:0; background: linear-gradient(#cd1823, #9b0f1a); border:1px solid #e72737; }
+
+
+img.blank {display: block; width:100%;}
+
+.panContainer {position: relative; color:#fff; background:#fff; }
+.panContainer .item_left {position: absolute; left:0; top:0; bottom:0; width:2.7%; background:#b8b8b8;}
+.panContainer .item_left ul {height:40%; text-align: center}
+.panContainer .item_left ul li {height:18%; overflow: hidden}
+.panContainer .item_left ul li div {width:50%; height:70%; margin:0 auto;}
+.panContainer .item_left ul li:first-child {padding:5% 0 12% ; height:25%;}
+.panContainer .item_left ul li img {width:70%; max-width:30px;}
+.panContainer .item_right {position: absolute; right:0; top:0; bottom:0; width:5.47%; background: #e4e4e4;}
+.panContainer .item_right ul {padding:15% 10% 0; height:100%; box-sizing: border-box}
+.panContainer .item_right li {height:20%; font-size:1.1em; color:#000; text-align: left}
+.panContainer .item_right li img {width:50%; max-width:35px;}
+.panContainer .item_center {position: absolute; left:2.7%; right:5.47%; top:0; bottom:0; background:#e4e4e4; overflow: hidden}
+.panContainer .item_center .itemBox1 {width:100%; height:40%; overflow: hidden; margin-top:-1px; border-bottom:2px solid #e4e4e4}
+.panContainer .item_center .itemBox2 {float:left; width:40%; height:60%; overflow: hidden; box-sizing: border-box; border-right:3px solid #e4e4e4}
+.panContainer .item_center .itemBox3 {float:left; width:60%; height:30%; overflow: hidden;}
+.panContainer .item_center .itemBox4 {float:left; width:30%; height:30%; overflow: hidden;}
+.panContainer .item_center .itemBox5 {float:left; width:30%; height:30%; overflow: hidden;}
+.panContainer .itemBox{
+    position: relative; display: -webkit-box; display: -ms-flexbox; display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap;
+    -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-line-pack:start; align-content:flex-start;
+    background:#fff;
+}
+.panContainer .itemBox .item{-webkit-box-sizing:border-box;  box-sizing:border-box; position: relative;}
+.panContainer .itemBox .item:after{content:''; height: 0; padding-bottom: 100%; display: block;}
+.panContainer .itemBox .item .in {position: absolute; top: 0;bottom: 0;left: 0;right: 0; margin: 0 0 -1px -1px; border:1px solid #aeaeae;font-size:12px;text-align:center;font-weight:800;color:#000}
+.panContainer .itemBox .item .in div {width:100%; height:100%; background-repeat: no-repeat !important;}
+
+.panContainer .item_center .itemBox1 .item{width:1.188235045%;}
+.panContainer .item_center .itemBox2 .item{width:4.455755332%;}
+.panContainer .item_center .itemBox3 .item{width:1.485104883%}
+.panContainer .item_center .itemBox4 .item{width:2.970314483%}
+.panContainer .item_center .itemBox5 .item{width:2.970314483%}
+
+.panContainer .item_result.active {display: block}
+.panContainer .item_result {display: none; position: absolute; left:0; top:0; bottom:0; right:0; z-index:10; background:rgba(0,0,0,0.7)}
+.panContainer .item_result .item {position: relative; width:60%; height:100%; margin:0 auto; background:url(/images/new/result.png) no-repeat center center; background-size:auto 100%;}
+.panContainer .item_result .r_card {position: absolute; bottom:15%; height:52%;  }
+.panContainer .item_result .r_card img {height:100%; vertical-align: bottom}
+.panContainer .item_result .card1 {left:0; width:35%;  text-align: right}
+.panContainer .item_result .card1 .popCardAreaP1 {width:80px;height:118px;float:right;margin-top:10px;}
+.panContainer .item_result .card1 .popCardAreaP2 {width:80px;height:118px;float:right;margin-right:10px;margin-top:10px;}
+.panContainer .item_result .card1 .popCardAreaP3 {position:absolute;width:80px;height:118px;float:right;margin-right:190px;-webkit-transform: rotate(90deg);  transform: rotate(90deg);}
+.panContainer .item_result .card2 {right:0; width:35%; }
+.panContainer .item_result .card2 .popCardAreaB1 {width:80px;height:118px;float:left;margin-top:10px;}
+.panContainer .item_result .card2 .popCardAreaB2 {width:80px;height:118px;float:left;margin-left:10px;margin-top:10px;}
+.panContainer .item_result .card2 .popCardAreaB3 {position:absolute;width:80px;height:118px;float:right;bottom:0px;margin-left:200px;-webkit-transform: rotate(90deg);  transform: rotate(90deg);}
+.panContainer .item_result .r_score {position: absolute; left:32%; top:13%; font-size:1.2em; line-height:1em;  text-align: center}/*width:3%;*/
+.panContainer .item_result .r_score2 {left:auto; right:31.8%;}
+.panContainer .item_result .r_img {position:absolute; left:30%; right:30%; top:0; bottom:0; background-size:contain; z-index:1; background-repeat: no-repeat; background-position: center center}
+.panContainer .item_result .r_baker {background-image: url(/images/new/r_banker.png)}
+.panContainer .item_result .r_tie {background-image: url(/images/new/r_tie.png)}
+.panContainer .item_result .r_player {background-image: url(/images/new/r_player.png)}
+
+
+.tableList {position:absolute; left:3.2%; right:3.2%; bottom:50px; top:10%; font-size:1.12em; overflow-y:scroll}
+.tableList .icon_exclusive{position: absolute; right:0; top:0; width:12%;}
+.tableList .tableItem {position: relative; float:left; width:45%; margin:0 2.5% 20px; border-bottom:1px solid #3a3a3a;}
+.tableList .table_title {width:100%; background:#3a3a3a; color:#f3e5b1; overflow: hidden;}
+.tableList .table_title div {float:right; padding:1% 2% 1.5%; }
+.tableList .table_title div:first-child {float:left;}
+.tableList .table_title span {color:#fff;}
+.tableList .table_score {position: relative; background:#000; color:#fff; padding:1% 2% 1.5%; }
+.tableList .table_score span {margin-left:3%;}
+.tableList .table_score .s1 {color:#ff4343; margin-left:0;}
+.tableList .table_score .s2 {color:#3a76cc;}
+.tableList .table_score .s3 {color:#6ec344;}
+.tableList .table_score button {position: absolute; right:0; top:0; bottom:0; background: #be1c2c; color:#fff; width:20%; font-size:1em;}
+
+.tableList .panContainer .item_center {left:0; right:0;}
+.tableList .panContainer .item_center .itemBox1 {width:100%; height:40%; overflow: hidden; margin-top:-1px; border-bottom:2px solid #e4e4e4}
+.tableList .panContainer .item_center .itemBox2 {float:left; width:40%; height:60%; overflow: hidden; box-sizing: border-box; border-right:3px solid #e4e4e4}
+.tableList .panContainer .item_center .itemBox3 {float:left; width:60%; height:20%; overflow: hidden;}
+.tableList .panContainer .item_center .itemBox4 {float:left; width:60%; height:20%; overflow: hidden;}
+.tableList .panContainer .item_center .itemBox5 {float:left; width:60%; height:20%; overflow: hidden;}
+
+.tableList .panContainer .item_center .itemBox1 .item{width:2.12%;}
+.tableList .panContainer .item_center .itemBox2 .item{width:7.98%;}
+.tableList .panContainer .item_center .itemBox3 .item{width:1.75%}
+.tableList .panContainer .item_center .itemBox4 .item{width:1.75%}
+.tableList .panContainer .item_center .itemBox5 .item{width:1.75%}
+.tableList .tableItem:hover .table_info {display: block}
+.tableList .table_info {display: none; position: absolute; left:0; right:0; top:0; bottom:0; background:#000;}
+.tableList .table_info ul {width:100%; overflow: hidden}
+.tableList .table_info li {float:left; width:50%; padding:3% 0 0; text-indent: 2%;}
+.tableList .table_info span {display: inline-block; width:40%;}
+.tableList .table_info em {color:#fef0b7;}
+
+
+.loginContainer {width:100%; height:100%; min-width:1100px; min-height:900px; background:url(../images/bg_login.jpg) no-repeat center 0; background-size:auto 100%;}
+.loginContainer .login {position: relative; width:880px; height:100%; margin:0 auto; text-align: center; background: url(../images/login1.png) no-repeat center 0; background-size:auto 100%;}
+.loginContainer .loginBox {position: absolute; left:10%; top:40%; bottom:0; width:80%; margin:0 auto 0; background:#262625; }
+.loginContainer .loginBox .item {width:60%; margin:0 auto; padding:0 10%; background: #000; border:2px solid #9e2828; color:#fff; box-sizing: border-box}
+.loginContainer .loginBox ul {padding:10px 0;}
+.loginContainer .loginBox li {position: relative; text-align: left; padding:0 0 0 30%; margin-top:5px; font-size:1.1em; }
+.loginContainer .loginBox li strong {position:absolute; left:0; top:8px; bottom:0; display: inline-block; width:30%; font-weight:normal; vertical-align: middle}
+.loginContainer .loginBox li em {position: absolute; right:0; bottom:8px; font-weight: bold}
+.loginContainer .loginBox li input {width:100%; background:none; padding:8px; font-size:1.1em; border:none; border-bottom:1px solid #666666; vertical-align: middle; color:#f3e5b1; box-sizing: border-box}
+.loginContainer .loginBox li button {position: relative; width:100%; padding:8px; border:1px solid #666666; color:#fff; line-height:1em; font-size:1.1em;  text-align: left; box-sizing: border-box; background:#0a0a0a;}
+.loginContainer .loginBox li button img {height:20px; }
+.loginContainer .loginBox li button span {position: absolute; right:10px; top:50%; text-align:center; font-size:10px; width: 0; height: 0; margin:-1px auto 0; border-right: 5px solid transparent; border-left: 5px solid transparent; border-top: 5px solid #fff; z-index:1;}
+.loginContainer .loginBox li button::after {content:" " ; position: absolute; right:0; top:0; bottom:0; width:30px; background:#666}
+.loginContainer .loginBox li div.select {display: none; position: absolute; left:30%; right:0; margin-top:-1px; z-index:2; background:#0a0a0a; border:1px solid #666; box-sizing: border-box; border-top:0;}
+.loginContainer .loginBox li div.select img {height:20px;}
+.loginContainer .loginBox li div.select div {padding:8px;  border-top:1px solid #666}
+.loginContainer .loginBox li div.select div:hover {background:#000;}
+.loginContainer .loginBox li div.select.active {display: block}
+.loginContainer .loginBox .i_btn {padding:20px 0 30px;}
+.loginContainer .loginBox .i_btn button {display: inline-block; width:55%; height:45px; color:#fff; font-size:20px; line-height:22px; background:#9e2828;}
+.loginContainer .loginBox .i_btn button:first-child {width:35%; margin-right:5%; background:#2e5c90}
+.loginContainer .agree {position: absolute; left:0; right:0; top:0; bottom:0; background: #262625; z-index:10; color:#e67316; font-size:1.1em; font-weight: bold}
+.loginContainer .agree h1 {padding:5%; }
+.loginContainer .agree h1 img {width:150px;}
+.loginContainer .agree .i_list {width:80%; height:50%; padding:0 2%; margin:2% auto; overflow:hidden; overflow-y:auto; color:#fff; box-sizing: border-box; font-weight: normal}
+.loginContainer .agree .i_btn {}
+.loginContainer .agree .i_btn button {height:30px; color:#fff; width:100px; background: #e67316;}
+.loginContainer .agree .i_btn button:first-child {background:#767676; margin-right:10px;}
+@media screen and (max-width: 1299px) {
+    body {font-size:12px}
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1300px) {
+    body {font-size:13px}
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1400px) {
+    body {font-size:14px}
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1500px) {
+    body {font-size:15px}
+}
+
+@media screen and (max-width: 1699px) and (min-width: 1600px) {
+    body {font-size:16px}
+}
+
+@media screen and (max-width: 1799px) and (min-width: 1700px) {
+    body {font-size:17px}
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+
+
+
+/*-------- Game Result Icon -----------*/
+/*[1] ��Ŀ*/
+.gr_1 {background:url(../images/v_1.png) center center no-repeat;background-size:contain}
+.gr_2 {background:url(../images/v_3.png) center center no-repeat;background-size:contain}
+.gr_3 {background:url(../images/v_2.png) center center no-repeat;background-size:contain}
+.gr_4 {background:url(../images/v_4.png) center center no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.gr_5 {background:url(../images/v_5.png) center center no-repeat;background-size:contain}
+.gr_6 {background:url(../images/v_7.png) center center no-repeat;background-size:contain}
+.gr_7 {background:url(../images/v_6.png) center center no-repeat;background-size:contain}
+.gr_8 {background:url(../images/v_8.png) center center no-repeat;background-size:contain}
+
+/*[3] �÷��̾�*/
+.gr_9 {background:url(../images/v_9.png) center center no-repeat;background-size:contain}
+.gr_10 {background:url(../images/v_11.png) center center no-repeat;background-size:contain}
+.gr_11 {background:url(../images/v_10.png) center center no-repeat;background-size:contain}
+.gr_12 {background:url(../images/v_12.png) center center no-repeat;background-size:contain}
+/*-------- Game Result Icon -----------*/
+
+/*-------- Game Line Result Icon -----------*/
+
+/*[1] ��Ŀ*/
+.glr_1 {background:url(../images/sv_1.png) center center no-repeat;background-size:contain}
+.glr_2 {background:url(../images/sv_3.png) center center no-repeat;background-size:contain}
+.glr_3 {background:url(../images/sv_2.png) center center no-repeat;background-size:contain}
+.glr_4 {background:url(../images/sv_4.png) center center no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.glr_5 {background:url(../images/sv_5.png) center center no-repeat;background-size:contain}
+.glr_6 {background:url(../images/sv_7.png) center center no-repeat;background-size:contain}
+.glr_7 {background:url(../images/sv_6.png) center center no-repeat;background-size:contain}
+.glr_8 {background:url(../images/sv_8.png) center center no-repeat;background-size:contain}
+
+/*[1] ��Ŀ*/
+.glr_1_1 {background:url(../images/sv_1.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+.glr_2_1 {background:url(../images/sv_3.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+.glr_3_1 {background:url(../images/sv_2.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+.glr_4_1 {background:url(../images/sv_4.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+
+/*[2] �÷��̾�*/
+.glr_5_1 {background:url(../images/sv_5.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+.glr_6_1 {background:url(../images/sv_7.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+.glr_7_1 {background:url(../images/sv_6.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+.glr_8_1 {background:url(../images/sv_8.png) , url(../images/ttt.png) center center no-repeat;background-size:contain}
+
+/*-------- Game Line Result Icon -----------*/
+
+/*-------- China Point Icon -----------*/
+/*[1] �߱���1 ( 1 : ȫ / 2 : û) */
+.c1_1 {background:url(../images/c1_1.png) center center no-repeat;background-size:contain}
+.c1_2 {background:url(../images/c1_2.png) center center no-repeat;background-size:contain}
+
+/*[2] �߱���2 ( 1 : ȫ / 2 : û) */
+.c2_1 {background:url(../images/c2_1.png) center center no-repeat;background-size:contain}
+.c2_2 {background:url(../images/c2_2.png) center center no-repeat;background-size:contain}
+
+/*[3] �߱���2 ( 1 : ȫ / 2 : û) */
+.c3_1 {background:url(../images/c3_1.png) center center no-repeat;background-size:contain}
+.c3_2 {background:url(../images/c3_2.png) center center no-repeat;background-size:contain}
+
+/* ====================��ȣ���============ */
+/*[1] �߱���1 ( 1 : ȫ / 2 : û) */
+.r_c1_1 {background:url(../images/c1_1.png) center center no-repeat; background-size:contain}
+.r_c1_2 {background:url(../images/c1_2.png) center center no-repeat;background-size:contain}
+
+/*[2] �߱���2 ( 1 : ȫ / 2 : û) */
+.r_c2_1 {background:url(../images/c2_1.png) center center no-repeat;background-size:contain}
+.r_c2_2 {background:url(../images/c2_2.png) center center no-repeat;background-size:contain}
+
+/*[3] �߱���2 ( 1 : ȫ / 2 : û) */
+.r_c3_1 {background:url(../images/c3_1.png) center center no-repeat;background-size:contain}
+.r_c3_2 {background:url(../images/c3_2.png) center center no-repeat;background-size:contain}
+
+/*-------- China Point Icon -----------*/
+
+
+/*---- Card Info ---*/
+
+		/*---- 01. Heart ---*/	
+		.h_1 {background:url(../images/poker.png) -7px -7px no-repeat;background-size:1115px 510px;}
+		.h_2 {background:url(../images/poker.png) -92px -7px no-repeat;background-size:1115px 510px;}
+		.h_3 {background:url(../images/poker.png) -177px -7px no-repeat;background-size:1115px 510px;}
+		.h_4 {background:url(../images/poker.png) -262px -7px no-repeat;background-size:1115px 510px;}
+		.h_5 {background:url(../images/poker.png) -347px -7px no-repeat;background-size:1115px 510px;}
+		.h_6 {background:url(../images/poker.png) -432px -7px no-repeat;background-size:1115px 510px;}
+		.h_7 {background:url(../images/poker.png) -517px -7px no-repeat;background-size:1115px 510px;}
+		.h_8 {background:url(../images/poker.png) -602px -7px no-repeat;background-size:1115px 510px;}
+		.h_9 {background:url(../images/poker.png) -687px -7px no-repeat;background-size:1115px 510px;}
+		.h_10 {background:url(../images/poker.png) -772px -7px no-repeat;background-size:1115px 510px;}
+		.h_11 {background:url(../images/poker.png) -857px -7px no-repeat;background-size:1115px 510px;}
+		.h_12 {background:url(../images/poker.png) -942px -7px no-repeat;background-size:1115px 510px;}
+		.h_13 {background:url(../images/poker.png) -1027px -7px no-repeat;background-size:1115px 510px;}
+
+		/*---- 02. Dia ---*/	
+		.d_1 {background:url(../images/poker.png) -7px -132px no-repeat;background-size:1115px 510px;}
+		.d_2 {background:url(../images/poker.png) -92px -132px no-repeat;background-size:1115px 510px;}
+		.d_3 {background:url(../images/poker.png) -177px -132px no-repeat;background-size:1115px 510px;}
+		.d_4 {background:url(../images/poker.png) -262px -132px no-repeat;background-size:1115px 510px;}
+		.d_5 {background:url(../images/poker.png) -347px -132px no-repeat;background-size:1115px 510px;}
+		.d_6 {background:url(../images/poker.png) -432px -132px no-repeat;background-size:1115px 510px;}
+		.d_7 {background:url(../images/poker.png) -517px -132px no-repeat;background-size:1115px 510px;}
+		.d_8 {background:url(../images/poker.png) -602px -132px no-repeat;background-size:1115px 510px;}
+		.d_9 {background:url(../images/poker.png) -687px -132px no-repeat;background-size:1115px 510px;}
+		.d_10 {background:url(../images/poker.png) -772px -132px no-repeat;background-size:1115px 510px;}
+		.d_11 {background:url(../images/poker.png) -857px -132px no-repeat;background-size:1115px 510px;}
+		.d_12 {background:url(../images/poker.png) -942px -132px no-repeat;background-size:1115px 510px;}
+		.d_13 {background:url(../images/poker.png) -1027px -132px no-repeat;background-size:1115px 510px;}
+
+		/*---- 03. clover ---*/	
+		.c_1 {background:url(../images/poker.png) -7px -257px no-repeat;background-size:1115px 510px;}
+		.c_2 {background:url(../images/poker.png) -92px -257px no-repeat;background-size:1115px 510px;}
+		.c_3 {background:url(../images/poker.png) -177px -257px no-repeat;background-size:1115px 510px;}
+		.c_4 {background:url(../images/poker.png) -262px -257px no-repeat;background-size:1115px 510px;}
+		.c_5 {background:url(../images/poker.png) -347px -257px no-repeat;background-size:1115px 510px;}
+		.c_6 {background:url(../images/poker.png) -432px -257px no-repeat;background-size:1115px 510px;}
+		.c_7 {background:url(../images/poker.png) -517px -257px no-repeat;background-size:1115px 510px;}
+		.c_8 {background:url(../images/poker.png) -602px -257px no-repeat;background-size:1115px 510px;}
+		.c_9 {background:url(../images/poker.png) -687px -257px no-repeat;background-size:1115px 510px;}
+		.c_10 {background:url(../images/poker.png) -772px -257px no-repeat;background-size:1115px 510px;}
+		.c_11 {background:url(../images/poker.png) -857px -257px no-repeat;background-size:1115px 510px;}
+		.c_12 {background:url(../images/poker.png) -942px -257px no-repeat;background-size:1115px 510px;}
+		.c_13 {background:url(../images/poker.png) -1027px -257px no-repeat;background-size:1115px 510px;}
+
+		/*---- 04. spade ---*/	
+		.s_1 {background:url(../images/poker.png) -7px -382px no-repeat;background-size:1115px 510px;}
+		.s_2 {background:url(../images/poker.png) -92px -382px no-repeat;background-size:1115px 510px;}
+		.s_3 {background:url(../images/poker.png) -177px -382px no-repeat;background-size:1115px 510px;}
+		.s_4 {background:url(../images/poker.png) -262px -382px no-repeat;background-size:1115px 510px;}
+		.s_5 {background:url(../images/poker.png) -347px -382px no-repeat;background-size:1115px 510px;}
+		.s_6 {background:url(../images/poker.png) -432px -382px no-repeat;background-size:1115px 510px;}
+		.s_7 {background:url(../images/poker.png) -517px -382px no-repeat;background-size:1115px 510px;}
+		.s_8 {background:url(../images/poker.png) -602px -382px no-repeat;background-size:1115px 510px;}
+		.s_9 {background:url(../images/poker.png) -687px -382px no-repeat;background-size:1115px 510px;}
+		.s_10 {background:url(../images/poker.png) -772px -382px no-repeat;background-size:1115px 510px;}
+		.s_11 {background:url(../images/poker.png) -857px -382px no-repeat;background-size:1115px 510px;}
+		.s_12 {background:url(../images/poker.png) -942px -382px no-repeat;background-size:1115px 510px;}
+		.s_13 {background:url(../images/poker.png) -1027px -382px no-repeat;background-size:1115px 510px;}
+
+	/*---- Card Info ---*/
+
+
+	
+/* ---------------------- Layer Popup - Start ------------------- */
+
+.popup {display: none; position: fixed; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.8); z-index:9999;}
+.popup .pop_cont {position: relative; top:5%; width:80%; max-width:80%; padding:40px; margin:0 auto; background: #151515; color:#fff; box-sizing: border-box; border:1px solid #e67316;}
+.popup .pop_cont h3 {margin-bottom:4%; color:#e67316; font-size:1.3em;}
+.popup .pop_cont h4 {margin-bottom:1%; }
+.popup .pop_cont .p_close {position: absolute; right:0; top:0; max-width:100px; width:10%;}
+.popup .pop_cont .p_close img {width:100%;}
+.popup table.p_table {width:100%; margin-bottom:5%; border-collapse: collapse}
+.popup .pop_cont table.p_table:last-child {margin-bottom:0;}
+.popup table.p_table td,
+.popup table.p_table th {padding:5px; border:1px solid #525252; font-weight: normal; font-size:0.9em;  background: #2d2d2d;}
+.popup table.p_table thead th {background: #5e5e5e; color:#fff; border-color:#525252;}
+.popup table.p_table div {position: relative; text-align: right; padding-left:10px;}
+.popup .i_down::after {position: absolute; left:3px; top:50%; margin-top:-2px; content:""; font-size:10px; width: 0; height: 0; border-right: 5px solid transparent; border-left: 5px solid transparent; border-top: 5px solid #6593d6;}
+.popup .i_up::after {position: absolute; left:3px; top:50%; margin-top:-2px;content:""; font-size:10px; width: 0; height: 0; border-right: 5px solid transparent; border-left: 5px solid transparent; border-bottom: 5px solid #ff4b4b;}
+.popup .i_win {color:#ff4b4b;}
+.popup .i_lose {color:#6593d6}
+.popup .i_tie {color:#5eb427}
+.popup .item_scroll {max-height:300px; overflow-y:auto;}
+.popup .search {position: relative; padding:5px; margin-bottom:20px; background:#2d2d2d; border:1px solid #525252;}
+.popup .search strong {padding:0 10px;}
+.popup .search button {position: absolute; right:5px; top:5px; padding:0 20px; height:30px; border:1px solid #878787; color:#fff; vertical-align: middle; background: linear-gradient(#777, #555555);  border-radius: 2px;}
+.popup .search .i-cal { width:100px; height:25px; padding:0; text-indent: 5px; margin:0 10px 0 3px; vertical-align: middle}
+.popup.active {display: block}
+/* ---------------------- Layer Popup - End ------------------- */
+
+/*-------- loading -----------*/
+#loading {width:100%;height:100%;top:0px;left:0px;position:fixed;display:none;opacity:0.7;background-color:#000;z-index:99;text-align:center;} 
+#loading-image {position: absolute;top: 50%;left: 50%;z-index: 100;}
+/*-------- loading -----------*/
+
+.bg_black {
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+}
+
+.game_status {position:absolute;z-index:999;width:120px;padding:10px 0 10px 0;border:2px solid #fff;background-color:#000;opacity:0.7;text-align:center;font-size:18px; font-weight:bold;}
+.game_msg {display:none;position:absolute;z-index:9999;width:250px;padding:20px 0 20px 0;border:2px solid #c31e2c;background-color:#000;text-align:center;font-size:20px;font-weight:bold;}
+#container {position:absolute;z-index:999;}
+
+.countdown_status{
+	right:0px;
+}
+
+.btn2:hover {background: linear-gradient(#264e7e, #3667a9);}
+.btn2 {background: linear-gradient(#3667a9, #264e7e); border:1px solid #467ec1; }
+
+.video_refresh {position:absolute;z-index:999;padding:0px 70px 10px 10px;opacity:0.7;text-align:center;bottom:0px;right:0px;cursor:pointer;}
